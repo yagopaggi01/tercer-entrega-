@@ -1,0 +1,256 @@
+// Estilos generales
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  nav {
+    background-color: white;
+    overflow: hidden;
+  
+    ul {
+      list-style-type: none;
+      overflow: hidden;
+  
+      li {
+        float: left;
+  
+        img {
+          margin: 13px;
+          height: 20px;
+          width: 30px;
+        }
+  
+        a {
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+  
+          &:hover {
+            background-color: black;
+            color: white;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+  h1, h2, h4 {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0;
+  }
+  
+  .imagen {
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+  
+    img {
+      display: block;
+      margin: 0;
+      width: 100%;
+      height: 210px;
+    }
+  }
+  
+  .local {
+    text-align: left;
+  }
+  
+  .localbg {
+    margin: 0;
+    margin-left: 1rem;
+    width: 50%;
+    margin-top: 1rem;
+    border-radius: 2%;
+    height: 700px;
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
+  }
+  
+  .info {
+    max-width: 900px;
+    margin: 40px 20px 100px;
+    border-radius: 10px;
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    @media (min-width: 900px) {
+      img {
+        width: 90%;
+        height: 600px;
+      }
+    }
+  }
+  
+  .info-text {
+    line-height: 3rem;
+    display: flex;
+    max-width: 900px;
+    margin: 20px 2px 100px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  
+    @media (min-width: 900px) {
+      margin: 20px 2px 100px;
+    }
+  }
+  
+  
+  .mapa {
+    text-align: center;
+    padding-bottom: 105px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+  }
+  
+  .carta-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .carta {
+    width: 17%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 015px;
+    margin: 1rem;
+    border-radius: 5%;
+    cursor: pointer;
+    margin-bottom: 4rem;
+  
+    &:hover {
+      font-weight: bold;
+    }
+  
+    img {
+      max-width: 100%;
+      height: 200px;
+      margin: 1rem;
+    }
+  
+    h3 {
+      margin-top: 0;
+    }
+  
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+  }
+  
+  .imagen-descuento img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #eca64ac4;
+    padding: 20px;
+    color: black;
+    height: 47px;
+  
+    p {
+      margin: 0;
+      line-height: 1.5rem;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+  }
+// Estilos específicos para mobile
+@media (max-width: 900px) {
+    .carta-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .carta {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .imagen {
+      text-align: center;
+    }
+  
+    .imagen-descuento {
+      text-align: center;
+    }
+  
+    .imagen-descuento img {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .imagen-ofertas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .imagenes-ofertas {
+      width: 100%;
+      margin: 1rem;
+      border-radius: 5%;
+      cursor: pointer;
+      margin-bottom: 6rem;
+      justify-content: center;
+    }
+  
+    footer {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #eca64ac4;
+      padding: 20px;
+      color: black;
+      height: 47px;
+  
+      p {
+        margin: 0;
+        line-height: 1.5rem;
+      }
+  
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+    
